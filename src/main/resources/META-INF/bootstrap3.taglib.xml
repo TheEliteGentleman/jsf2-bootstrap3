@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<facelet-taglib version="2.0"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xml="http://www.w3.org/XML/1998/namespace"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facelettaglibrary_2_0.xsd">
+	<namespace>http://sindi.co.za/faces/bootstrap3</namespace>
+	<!-- HTML <source> element using sources-->
+	<tag>
+		<description>
+			<![CDATA[The <code>UIMessages</code> component that wraps it using Bootstrap 3 Alerts component.]]>
+		</description>
+		<tag-name>messages</tag-name>
+		<component>
+			<component-type>za.co.sindi.faces.bootstrap3.Bootstrap3Messages</component-type>
+		</component>
+		<attribute>
+			<description>The component identifier for this component. This value must be unique within the closest parent component that is a naming container.</description>
+			<name>id</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>Dismissible alert (with a close button)</description>
+			<name>dismissible</name>
+			<required>false</required>
+			<type>java.lang.Boolean</type>
+		</attribute>
+		<attribute>
+			<description>Whether the message detail and summary should be HTML-escaped. Default is true.</description>
+			<name>escape</name>
+			<required>false</required>
+			<type>java.lang.Boolean</type>
+		</attribute>
+		<attribute>
+			<description>The icon library to use for display icons (if showIcon is true). Values must be either 'bs' (Bootstrap) or 'fa' (Font-Awesome), without quotes.</description>
+			<name>iconLibrary</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>Flag indicating whether or not this component should be rendered (during Render Response Phase), or processed on any subsequent form submit. The default value for this property is true.</description>
+			<name>rendered</name>
+			<required>false</required>
+			<type>java.lang.Boolean</type>
+		</attribute>
+		<attribute>
+			<description>Show message icon status before the summary message. Requires FontAwesome to work.</description>
+			<name>showIcon</name>
+			<required>false</required>
+			<type>java.lang.Boolean</type>
+		</attribute>
+	</tag>
+	<tag>
+		<description>
+			<![CDATA[The <code>UIMessage</code> component that wraps it using Bootstrap 3 form help text component.]]>
+		</description>
+		<tag-name>message</tag-name>
+		<component>
+			<component-type>za.co.sindi.faces.bootstrap3.Bootstrap3Message</component-type>
+		</component>
+		<attribute>
+			<description>The component identifier for this component. This value must be unique within the closest parent component that is a naming container.</description>
+			<name>id</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>Show message icon status before the summary message. Requires FontAwesome to work.</description>
+			<name>showIcon</name>
+			<required>false</required>
+			<type>java.lang.Boolean</type>
+		</attribute>
+		<attribute>
+			<description>UIMessages error style class</description>
+			<name>errorClass</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>UIMessages fatal style class</description>
+			<name>fatalClass</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>UIMessages info style class</description>
+			<name>infoClass</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>UIMessages warning style class</description>
+			<name>warningClass</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>Whether the message detail and summary should be HTML-escaped. Default is true.</description>
+			<name>escape</name>
+			<required>false</required>
+			<type>java.lang.Boolean</type>
+		</attribute>
+		<attribute>
+			<description>The icon library to use for display icons (if showIcon is true). Values must be either 'bs' (Bootstrap) or 'fa' (Font-Awesome), without quotes.</description>
+			<name>iconLibrary</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>Flag indicating whether or not this component should be rendered (during Render Response Phase), or processed on any subsequent form submit. The default value for this property is true.</description>
+			<name>rendered</name>
+			<required>false</required>
+			<type>java.lang.Boolean</type>
+		</attribute>
+	</tag>
+	<tag>
+		<description>
+			<![CDATA[DataGrid displays data in a grid layout.]]>
+		</description>
+		<tag-name>dataGrid</tag-name>
+		<component>
+			<component-type>za.co.sindi.faces.bootstrap3.Bootstrap3DataGrid</component-type>
+		</component>
+		<attribute>
+			<description>The component identifier for this component. This value must be unique within the closest parent component that is a naming container.</description>
+			<name>id</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>Number of columns in a grid.</description>
+			<name>columns</name>
+			<required>false</required>
+			<type>java.lang.Integer</type>
+		</attribute>
+		<attribute>
+			<description>Comma-delimited list of CSS style classes that will be applied to the columns of this table.</description>
+			<name>columnClasses</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>Layout approach to use. Valid values are "table" or "grid", for responsive grid.</description>
+			<name>layout</name>
+			<required>true</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>Flag indicating whether or not this component should be rendered (during Render Response Phase), or processed on any subsequent form submit. The default value for this property is true.</description>
+			<name>rendered</name>
+			<required>false</required>
+			<type>java.lang.Boolean</type>
+		</attribute>
+		<attribute>
+			<description>CSS style(s) to be applied when this component is rendered.</description>
+			<name>style</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>Space-separated list of CSS style class(es) to be applied when this element is rendered. This value must be passed through as the "class" attribute on generated markup.</description>
+			<name>styleClass</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+	</tag>
+	<tag>
+		<description>
+			<![CDATA[Panel is a grouping component with a header, body and footer.]]>
+		</description>
+		<tag-name>panel</tag-name>
+		<component>
+			<component-type>za.co.sindi.faces.bootstrap3.Bootstrap3Panel</component-type>
+		</component>
+		<attribute>
+			<description>The component identifier for this component. This value must be unique within the closest parent component that is a naming container.</description>
+			<name>id</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>Assigns one or more space-separated CSS class names to the component body.</description>
+			<name>bodyClass</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>Assigns one or more space-separated CSS class names to the component header.</description>
+			<name>headerClass</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>Assigns one or more space-separated CSS class names to the component footer.</description>
+			<name>footerClass</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>Flag indicating whether or not this component should be rendered (during Render Response Phase), or processed on any subsequent form submit. The default value for this property is true.</description>
+			<name>rendered</name>
+			<required>false</required>
+			<type>java.lang.Boolean</type>
+		</attribute>
+		<attribute>
+			<description>CSS style(s) to be applied when this component is rendered.</description>
+			<name>style</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>Space-separated list of CSS style class(es) to be applied when this element is rendered. This value must be passed through as the "class" attribute on generated markup.</description>
+			<name>styleClass</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+	</tag>
+	<tag>
+		<description>
+			<![CDATA[A scroller component for the <code>UIData</code> component, such as the JSF <code>DataTable</code>. The component can be nested inside a UIData component or "linked" using the <code>for</code> attribute so that the UIData can be found.]]>
+		</description>
+		<tag-name>dataScroller</tag-name>
+		<component>
+			<component-type>za.co.sindi.faces.bootstrap3.Bootstrap3DataScroller</component-type>
+		</component>
+		<attribute>
+			<description>The component identifier for this component. This value must be unique within the closest parent component that is a naming container.</description>
+			<name>id</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>step (pages) used for fast forward and fast rewind facet component.</description>
+			<name>fastStep</name>
+			<required>false</required>
+			<type>java.lang.Integer</type>
+		</attribute>
+		<attribute>
+			<description>The JSF id of a UIData component that this scroller will affect. If this attribute is not present then the datascroller must be a child of a UIData component.</description>
+			<name>for</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>A parameter name, under which the actual page count is set in request scope similar to the var parameter.</description>
+			<name>pageCountVar</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>A parameter name, under which the actual page index is set in request scope similar to the var parameter.</description>
+			<name>pageIndexVar</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>A boolean indicator to indicate the type of Bootstrap 3 pagination to render (true, to render Bootstrap 3 paginator, false, to render Bootstrap 3 Pager). The Pager does not render the page index(es).</description>
+			<name>paginator</name>
+			<required>false</required>
+			<type>java.lang.Boolean</type>
+		</attribute>
+		<attribute>
+			<description>The maximum amount of pages to be displayed in the paginator.</description>
+			<name>paginatorMaxPages</name>
+			<required>false</required>
+			<type>java.lang.Integer</type>
+		</attribute>
+		<attribute>
+			<description>Flag indicating whether or not this component should be rendered (during Render Response Phase), or processed on any subsequent form submit. The default value for this property is true.</description>
+			<name>rendered</name>
+			<required>false</required>
+			<type>java.lang.Boolean</type>
+		</attribute>
+		<attribute>
+			<description>CSS style(s) to be applied when this component is rendered.</description>
+			<name>style</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+		<attribute>
+			<description>Space-separated list of CSS style class(es) to be applied when this element is rendered. This value must be passed through as the "class" attribute on generated markup.</description>
+			<name>styleClass</name>
+			<required>false</required>
+			<type>java.lang.String</type>
+		</attribute>
+	</tag>
+</facelet-taglib>
